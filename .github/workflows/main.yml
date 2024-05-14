@@ -4,10 +4,10 @@ on: push
 jobs:
   test:
     runs-on: kmiles-fedora
-    container:
-      # image: localhost/py3env
-      image: katevdi/vdi-conda:latest
-      options: "-v /w:/w:ro -p 5000:5000"
+    # container:
+    #   # image: localhost/py3env
+    #   image: katevdi/vdi-conda:latest
+    #   options: "-v /w:/w:ro -p 5000:5000"
     steps:
     - uses: actions/checkout@v4 # need to configure auth token
     # - uses: actions/setup-node@v1
